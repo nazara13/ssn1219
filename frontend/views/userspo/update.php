@@ -1,0 +1,23 @@
+<?php
+
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Userspo */
+
+$this->title = 'Update Peserta: ' . $model->id;
+
+$this->params['breadcrumbs'][] = ['label' => 'Upload', 'url' => ['create']];
+//$this->params['breadcrumbs'][] = ['label' => 'Userspos', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['create', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = 'Update';
+?>
+<div class="userspo-update">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->renderAjax('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
